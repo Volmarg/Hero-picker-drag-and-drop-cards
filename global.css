@@ -1,0 +1,492 @@
+*{
+
+}
+
+body{
+
+
+}
+
+#picker_container{
+  margin:0px !important !important;
+}
+
+#picker_container .vc_column_container{
+  margin:0px !important;
+}
+
+.mainCenteredBox{
+/*  background: url('images/background.jpg') !important; */
+  background-repeat: no-repeat !important;
+
+  align-self: center !important;
+  left:300px !important;
+  position: relative !important;
+
+  width:100% !important;
+  height:90% !important;
+
+  padding-top:50px !important !important;
+}
+.mainCenteredBox header, .mainCenteredBox .charactersTeams, .mainCenteredBox .charsNfilters{
+  position: relative !important;
+  left:-300px !important;
+}
+
+
+/* ------------------------------- Header boxes  ---------------------- */
+
+.YourTeamBox{
+  background-color: #559f1f !important;
+  margin-left:22px;
+}
+
+.EnemyTeamBox{
+  background-color: #fa0000 !important;
+  margin-right:22px;
+}
+
+.YourTeamBox, .EnemyTeamBox{
+  width:225px !important !important;
+  height:50px !important !important;
+  margin-bottom:20px !important;
+  border:3px black solid !important;
+}
+
+.YourTeamBox img, .EnemyTeamBox img{
+  padding:5px !important;
+}
+
+header>section>p{
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  color:white
+}
+
+header>section>p>span{
+  font-size: 23px !important;
+  color:black !important;
+}
+
+.search{
+  border:3px black solid !important;
+  display: flex !important;
+  justify-content:space-around !important;
+  width:225px !important;
+  height:47px !important;
+
+  color:white !important;
+  background-color: black;
+
+}
+
+
+.search span{
+  color: #fac800 !important;
+  background-color: black !important;
+  padding: 11px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  width:62px;
+  align-self: center;
+  left: -5px;
+  position: relative;
+}
+
+/* ------------------------------- character  ---------------------- */
+.charsListToPick{
+  display: flex !important;
+  position: relative !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
+}
+
+/* ROWS*/
+.charactersTeams{
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: row !important;
+}
+
+.singleRowCharsPick, .team{
+  display:flex !important;
+  flex-direction: row !important;
+
+  flex-wrap:wrap !important;
+  justify-content: space-around !important;
+}
+
+/* BOXES */
+.singleCharacterBox{
+
+  background-image:url('/wp-content/plugins/overwatch/images/nohero2.png') !important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border:1px black solid !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#myCharacter{
+  background-image:url('/wp-content/plugins/overwatch/images/hero3.jpg') !important;
+}
+
+.charsListToPick .singleCharacterBox{
+  background: black !important;
+}
+
+.singleCharacterBox img{
+  width: 100% !important;
+}
+
+.singleCharacterBox p{
+  color:white !important;
+  font-size:13px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  align-self: center !important;
+  margin-top:3px !important;
+}
+
+.small{
+  width:80px !important;
+  height:160px !important;
+  margin:5px !important;
+}
+
+.small p{
+  font-size:12px !important;
+}
+
+.big{
+  width:100px !important;
+  height:200px !important;
+  margin:10px !important;
+}
+
+/* Buttons and info */
+.splitter{
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+.VSsplit{
+  align-self: center !important;
+}
+
+/*---- UPPER INFO ABOUT TEAM AND SEARCH SECTION, apply */
+header{
+  display: flex !important;
+  justify-content: space-between !important;
+  flex-direction: row !important;
+}
+
+.enemy .singleCharacterBox{
+  background-color: #fa0000 !important;
+}
+
+.Your .singleCharacterBox{
+  background-color: #559f1f !important;
+}
+
+.Your .singleCharacterBox+.singleCharacterBox{
+  background-color: #fac800 !important;
+}
+
+.Your p, .enemy p{
+  color:black !important;
+}
+
+.enemy .small p{
+  background-color: #fa0000;
+  width: 100%;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+  padding: 2px;
+}
+
+.Your .small p{
+  background-color: #fac800;
+  width: 100%;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+  padding: 2px;
+}
+
+#myCharacter p{
+  background-color: #559f1f;
+  width: 100%;
+  display: inline-block;
+  top: -3px;
+  position: relative;
+  padding: 2px;
+}
+
+.filters{
+  display: flex !important;
+  justify-content: space-around !important;
+  flex-direction: column !important;
+
+}
+
+.filters .apply{
+  align-self: center !important;
+  margin:10px !important;
+  background-color: #fac800 !important;
+
+  display: flex !important;
+  justify-content: space-around !important;
+
+}
+
+.applyButton{
+  display: flex !important;
+  justify-content: space-around !important;
+
+
+}
+
+.applyButton>img{
+  align-self: center !important;
+}
+
+
+.searchBox, .applyButton{
+  border:3px black solid !important;
+  width:150px ;
+  height:50px ;
+
+  margin-bottom:20px !important;
+}
+
+.apply{
+  height:50px !important;
+}
+
+.searchBox{
+  border:0px !important;
+  position: relative;
+  left: -50px;
+}
+
+/* FILTERS OPTIONS */
+
+.filtersList{
+  width:600px !important;
+  height: 41px !important;
+  margin: 10px !important;
+  margin-left: 0px !important;
+
+  background-color: black !important;
+
+  display: flex !important;
+  justify-content: space-around !important;
+}
+
+
+.singleOption{
+    align-self: center;
+}
+
+.singleOption .proffesionFilter a{
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 18px;
+  top: 2px;
+  position: relative;
+}
+
+.singleOption .proffesionFilter a.pickedFilter{
+
+  top: -0px;
+  color:#fac800 !important;
+
+}
+
+.singleOption .proffesionFilter a:hover{
+  text-decoration: none !important;
+}
+
+.line, .all{
+  border-left:2px white solid !important;
+  display: inline-block !important;
+  width:20px !important;
+}
+
+.all{
+  border: none !important;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: black !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: black !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: black !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+
+.search input{
+   text-align:center !important;
+   color:black !important;
+   height:41px;
+   padding:0px !important;
+   width:159.76px !important;
+
+   border:0px !important;
+   background-color: #fac800 !important;
+}
+
+
+/* OTHER */
+.overlay{
+  width: inherit !important;
+  position: absolute !important;
+  height: inherit !important;
+}
+
+.mobileAdd{
+  display:none;
+}
+
+@media all and (min-width: 501px) {
+  .singleCharacterBox:hover .mobileAdd{
+    display: flex;
+    top: -81px;
+    position: relative;
+    justify-content: space-around;
+  }
+}
+
+.plusGreen {
+    background-color: red;
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  cursor: pointer;
+}
+
+.plusGreen::after {
+  content:'+';
+  color: white;
+  position: absolute;
+  top: 3px;
+  left: 67px;
+  font-weight: bold;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.plusRed {
+    background-color: green;
+    display: block;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+  cursor: pointer;
+}
+
+.plusRed::after{
+  content:'+';
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+
+/*rwd*/
+
+@media all and (max-width: 970px) {
+      .searchBox{
+        position: absolute;
+        top: 52px;
+        left: 35%;
+      }
+
+      header{
+            padding-bottom: 50px;
+      }
+}
+
+@media all and (max-width: 500px) {
+    .big {
+      height:250px !important ;
+    }
+
+    .searchBox{
+      position: absolute;
+      top: 52px;
+      left: 15% !important;
+    }
+
+    .mobileAdd{
+      display:flex !important;
+      justify-content: space-around !important;
+      position: relative;
+    }
+
+    .filters{
+      flex-direction: column !important;
+    }
+
+    .filters .line{
+      display:none !important;
+    }
+
+    .filtersList{
+      flex-direction: column !important;
+      height:300px !important;
+      width:120px !important;
+      align-self: center !important;
+    }
+}
+
+
+/* Other fixes */
+
+.emailInput::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+.emailInput::-moz-placeholder { /* Firefox 19+ */
+  color: white !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+.emailInput:-ms-input-placeholder { /* IE 10+ */
+  color: white !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+.emailInput:-moz-placeholder { /* Firefox 18- */
+  color: white !important;
+  text-align:center !important;
+  font-weight:bold;
+}
+
+input[value^="SIGN UP"]{
+  float:left;
+}
